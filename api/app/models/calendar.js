@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const { Schema, model } = mongoose
 
-const todoSchema = new Schema(
+const calendarSchema = new Schema(
 	{
 		item: {
 			type: String,
@@ -13,6 +13,10 @@ const todoSchema = new Schema(
         },
         description: {
             type: String
+        },
+		owner: {
+            type: Schema.Types.ObjectId,
+            ref: 'User'
         }
 	},
         {
