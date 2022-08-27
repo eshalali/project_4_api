@@ -3,15 +3,15 @@ const { Schema, model } = mongoose
 
 const calendarSchema = new Schema(
 	{
-		item: {
+		title: {
 			type: String,
 			required: true,
 		},
-		date: {
+		startDate: {
 			type: String,
 			required: true,
         },
-        description: {
+        endDate: {
             type: String
         },
 		owner: {
