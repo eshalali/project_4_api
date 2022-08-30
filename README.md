@@ -3,6 +3,9 @@
 ## Description
 An app that serves as a destination for all of a user's planning and wellness needs. Users can journal, make to-do lists, and track their habits in their accounts. 
 
+## Client Repository
+https://github.com/eshalali/project_4_client
+
 ## User Stories
 
 * As a user, I want to be able to create an account
@@ -36,5 +39,17 @@ An app that serves as a destination for all of a user's planning and wellness ne
 ![ERDs](./images/Page5.jpg)
 
 ## API
-### Mock Bee Habit Tracker
-This API can be used to add, track, and subcategorize a user's habits that they want to focus on. Little blocks represent a single day or a time during the day when the user wants to check in about their consistency with different goals.
+### Full Calendar API
+Full Calendar is a Calendar component for React that displays a variety of views. Users can add events to this and have them display on the calendar, making organization and tracking easy.
+
+## Routes
+### Journal AND ToDo
+Action      | HTTP Verb  | Route              | Purpose
+----------- | ---------- |------------------- | --------------------------------------- |
+Index       | GET        | /journal/         | show all journal entries                 |
+Show        | GET        | /journal/:id      | look at one journal entry                |
+Edit        | GET        | /journal/:id/edit | edit one journal entry                   |
+Update      | PATCH      | /journal/:id      | update one journal entry                 |
+New         | GET        | /journal/create   | new journal entry                        |
+Create      | POST       | /journal          | create journal entry,redirect to all     |
+Delete      | DELETE     | /journal/:id      | delete a single journal entry            |
