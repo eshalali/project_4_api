@@ -78,7 +78,7 @@ app.use(calendarRoutes)
 app.use(errorHandler)
 
 // run API on designated port (4741 in this case)
-app.listen((process.env.PORT || 3000), () => {
+app.listen(port, () => {
 	console.log('listening on port ' + port)
 })
 
